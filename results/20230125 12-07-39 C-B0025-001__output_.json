@@ -1,0 +1,5348 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "C-B0025-001",
+    "fields": [
+      {
+        "id": "StationID",
+        "type": "String"
+      },
+      {
+        "id": "StationName",
+        "type": "String"
+      },
+      {
+        "id": "StationNameEN",
+        "type": "String"
+      },
+      {
+        "id": "StationAttribute",
+        "type": "String"
+      },
+      {
+        "id": "Date",
+        "type": "String"
+      },
+      {
+        "id": "Precipitation",
+        "type": "String"
+      },
+      {
+        "id": "YearMonth",
+        "type": "String"
+      },
+      {
+        "id": "Total",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "location": [
+      {
+        "station": {
+          "StationID": "467540",
+          "StationName": "大武",
+          "StationNameEN": "DAWU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "10.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467571",
+          "StationName": "新竹",
+          "StationNameEN": "HSINCHU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466920",
+          "StationName": "臺北",
+          "StationNameEN": "TAIPEI",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467441",
+          "StationName": "高雄",
+          "StationNameEN": "Kaohsiung",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466900",
+          "StationName": "淡水",
+          "StationNameEN": "TAMSUI",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "16.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467270",
+          "StationName": "田中",
+          "StationNameEN": "TianZhong",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "C1E770",
+          "StationName": "苗栗",
+          "StationNameEN": "MIAOLI",
+          "StationAttribute": "局屬自動氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "X"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467610",
+          "StationName": "成功",
+          "StationNameEN": "CHENGGONG",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "9.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "19.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "10.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "26.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "48.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467550",
+          "StationName": "玉山",
+          "StationNameEN": "YUSHAN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "49.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "C0G650",
+          "StationName": "彰化",
+          "StationNameEN": "CHANGHUA",
+          "StationAttribute": "局屬自動氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466950",
+          "StationName": "彭佳嶼",
+          "StationNameEN": "PENGJIAYU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "41.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "65.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467110",
+          "StationName": "金門",
+          "StationNameEN": "KINMEN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466930",
+          "StationName": "竹子湖",
+          "StationNameEN": "ZHUZIHU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "13.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "18.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "17.5"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "25.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.5"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "16.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "C0C700",
+          "StationName": "桃園",
+          "StationNameEN": "TAOYUAN",
+          "StationAttribute": "局屬自動氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467990",
+          "StationName": "馬祖",
+          "StationNameEN": "MATSU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466990",
+          "StationName": "花蓮",
+          "StationNameEN": "HUALIEN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "22.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "60.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "17.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "31.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "14.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "25.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "12.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466940",
+          "StationName": "基隆",
+          "StationNameEN": "KEELUNG",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "19.5"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "14.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "23.5"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "22.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "31.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "16.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "9.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "31.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "19.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "18.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.5"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "16.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "26.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "22.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "C0R170",
+          "StationName": "屏東",
+          "StationNameEN": "PINGTUNG",
+          "StationAttribute": "局屬自動氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467650",
+          "StationName": "日月潭",
+          "StationNameEN": "SUN MOON LAKE",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "12.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467660",
+          "StationName": "臺東",
+          "StationNameEN": "TAITUNG",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "10.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "28.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "16.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467490",
+          "StationName": "臺中",
+          "StationNameEN": "TAICHUNG",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467590",
+          "StationName": "恆春",
+          "StationNameEN": "HENGCHUN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467480",
+          "StationName": "嘉義",
+          "StationNameEN": "CHIAYI",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467300",
+          "StationName": "東吉島",
+          "StationNameEN": "DONGJIDAO",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "C0K400",
+          "StationName": "雲林",
+          "StationNameEN": "YUNLIN",
+          "StationAttribute": "局屬自動氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467080",
+          "StationName": "宜蘭",
+          "StationNameEN": "YILAN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "72.5"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "32.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "13.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "18.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "37.5"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "25.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466910",
+          "StationName": "鞍部",
+          "StationNameEN": "ANBU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "27.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "22.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "22.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "13.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "10.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "10.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "14.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "20.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "13.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.5"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "51.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "466881",
+          "StationName": "新北",
+          "StationNameEN": "New Taipei",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "12.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467410",
+          "StationName": "臺南",
+          "StationNameEN": "TAINAN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467050",
+          "StationName": "新屋",
+          "StationNameEN": "XINWU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467350",
+          "StationName": "澎湖",
+          "StationNameEN": "PENGHU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467530",
+          "StationName": "阿里山",
+          "StationNameEN": "ALISHAN",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "4.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "25.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.0"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467620",
+          "StationName": "蘭嶼",
+          "StationNameEN": "LANYU",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "6.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "8.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "20.0"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "7.0"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.0"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "11.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "12.0"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "1.5"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "24.0"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "6.5"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "28.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "4.5"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      },
+      {
+        "station": {
+          "StationID": "467060",
+          "StationName": "蘇澳",
+          "StationNameEN": "SU-AO",
+          "StationAttribute": "局屬有人氣象站"
+        },
+        "stationObsTimes": {
+          "stationObsTime": [
+            {
+              "weatherElements": {
+                "Precipitation": "62.0"
+              },
+              "Date": "2023-01-01"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "61.5"
+              },
+              "Date": "2023-01-02"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "58.0"
+              },
+              "Date": "2023-01-03"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "12.5"
+              },
+              "Date": "2023-01-04"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "17.5"
+              },
+              "Date": "2023-01-05"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.5"
+              },
+              "Date": "2023-01-06"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-07"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-08"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "22.5"
+              },
+              "Date": "2023-01-09"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "35.5"
+              },
+              "Date": "2023-01-10"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.5"
+              },
+              "Date": "2023-01-11"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-12"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "T"
+              },
+              "Date": "2023-01-13"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-14"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-15"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "10.0"
+              },
+              "Date": "2023-01-16"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "5.0"
+              },
+              "Date": "2023-01-17"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-18"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "3.5"
+              },
+              "Date": "2023-01-19"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "115.5"
+              },
+              "Date": "2023-01-20"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "9.0"
+              },
+              "Date": "2023-01-21"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "0.0"
+              },
+              "Date": "2023-01-22"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "14.5"
+              },
+              "Date": "2023-01-23"
+            },
+            {
+              "weatherElements": {
+                "Precipitation": "2.0"
+              },
+              "Date": "2023-01-24"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

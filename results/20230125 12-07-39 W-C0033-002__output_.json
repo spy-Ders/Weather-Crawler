@@ -1,0 +1,125 @@
+{
+  "success": "true",
+  "result": {
+    "resource_id": "W-C0033-002",
+    "fields": [
+      {
+        "id": "datasetDescription",
+        "type": "String"
+      },
+      {
+        "id": "datasetLanguage",
+        "type": "String"
+      },
+      {
+        "id": "issueTime",
+        "type": "String"
+      },
+      {
+        "id": "startTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "endTime",
+        "type": "Timestamp"
+      },
+      {
+        "id": "update",
+        "type": "String"
+      },
+      {
+        "id": "contentLanguage",
+        "type": "String"
+      },
+      {
+        "id": "contentText",
+        "type": "String"
+      },
+      {
+        "id": "language",
+        "type": "String"
+      },
+      {
+        "id": "phenomena",
+        "type": "String"
+      },
+      {
+        "id": "significance",
+        "type": "String"
+      },
+      {
+        "id": "locationName",
+        "type": "String"
+      }
+    ]
+  },
+  "records": {
+    "record": [
+      {
+        "datasetInfo": {
+          "datasetDescription": "陸上強風特報",
+          "datasetLanguage": "zh-TW",
+          "validTime": {
+            "startTime": "2023-01-25 09:34:00",
+            "endTime": "2023-01-25 17:00:00"
+          },
+          "issueTime": 1674639600000
+        },
+        "contents": {
+          "content": {
+            "contentLanguage": "zh-TW",
+            "contentText": "\n                東北風明顯偏強，桃園至彰化、東南部（含蘭嶼、綠島）、恆春半島沿海空曠地區及澎湖、金門易有９至１０級強陣風，基隆北海岸、東北部、東部、雲林至臺南沿海空曠地區及桃園、新竹地區亦有較強陣風，鄰近海域並有較大風浪，請特別注意；今日下午起桃園至彰化、東南部（含蘭嶼、綠島）、恆春半島沿海空曠地區及澎湖、金門風力將稍減弱為８至９級強陣風。\n                "
+          }
+        },
+        "hazardConditions": {
+          "hazards": {
+            "hazard": {
+              "info": {
+                "language": "zh-TW",
+                "phenomena": "陸上強風",
+                "significance": "特報",
+                "affectedAreas": {
+                  "location": [
+                    {
+                      "locationName": "桃園市"
+                    },
+                    {
+                      "locationName": "新竹市"
+                    },
+                    {
+                      "locationName": "新竹縣"
+                    },
+                    {
+                      "locationName": "苗栗縣"
+                    },
+                    {
+                      "locationName": "臺中市"
+                    },
+                    {
+                      "locationName": "彰化縣"
+                    },
+                    {
+                      "locationName": "恆春半島"
+                    },
+                    {
+                      "locationName": "臺東縣"
+                    },
+                    {
+                      "locationName": "蘭嶼綠島"
+                    },
+                    {
+                      "locationName": "澎湖縣"
+                    },
+                    {
+                      "locationName": "金門縣"
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
