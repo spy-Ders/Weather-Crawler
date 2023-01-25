@@ -9,11 +9,7 @@ import json
 with open('config.json', 'r+', encoding='utf-8') as _file:
     _config = json.load(_file)
 
-
-
-_mode = {}
-
-url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode}?Authorization=" + _config["TOKEN"]
+# url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode}?Authorization=" + _config["TOKEN"]
 
 
 async def main():
@@ -21,10 +17,13 @@ async def main():
     from orjson import dumps, OPT_INDENT_2
 
     dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
-    _data = requests.get(url).json()
-
-    async with aopen(f"results\\{dt} {_mode}__output.json", mode = "wb") as __file:
-        await __file.write(dumps(_data, option=OPT_INDENT_2))
+    async with aopen("mode.txt", mode="r+") as __mode:
+        async for _mode in __mode:
+            url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode[:-1]}?Authorization=" + _config["TOKEN"]
+            _data = requests.get(url).json()
+            print(f"Capture >>> {_mode[:-1]}")
+            async with aopen(f"results\\{dt} {_mode[:-1]}__output_.json", mode = "wb") as __file:
+                await __file.write(dumps(_data, option=OPT_INDENT_2))
 
 if __name__ == "__main__":
     if system() == "Windows":
