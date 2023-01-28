@@ -1,23 +1,71 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 import requests
 from bs4 import BeautifulSoup
-from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy
+from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
 from aiofiles import open as aopen
 from platform import system
+
+from flask_ngrok import run_with_ngrok
+from flask import Flask, request, abort, current_app
+from linebot import LineBotApi, WebhookHandler
+from linebot.exceptions import InvalidSignatureError
+# from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage
 
 import json
 with open('config.json', 'r+', encoding='utf-8') as _file:
     _config = json.load(_file)
 
+async def kwds_check(msg):
+    async with aopen("keywords.txt", mode="r+", encoding="utf-8") as __kwds:
+        for _kwds in __kwds:
+            if msg == _kwds[:-1]:
+                print(_kwds)
+                return True
+        else:
+            return False
+
 # url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode}?Authorization=" + _config["TOKEN"]
 
+app = Flask(__name__, template_folder="templates")
+
+line_bot_api = LineBotApi(_config["BOT-TOKEN"])
+handler = WebhookHandler(_config["BOT-SECRET"])
+
+def reply_msg(msg, rk, TOKEN):
+    HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
+    BODY = {
+    "replyToken" : rk,
+    "messages" : [{
+            "type": "text",
+            "text": msg
+        }]
+    }
+    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=json.dumps(BODY).encode("utf-8"))
+    print(response.text)
+
+def reply_img(img, rk, TOKEN):
+    HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
+    BODY = {
+        "replyToken" : rk,
+        "messages" : [{
+            "type" : "image", 
+            "originalContentUrl" : img,
+            "previewImageUrl" : img
+        }]
+    }
+    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=json.dumps(BODY).encode("utf-8"))
+    print(response.text)
+
+def filter(msg):
+    if "地震" in msg:
+        return 
 
 async def main():
 
     from orjson import dumps, OPT_INDENT_2
 
     dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
-    async with aopen("mode.txt", mode="r+") as __mode:
+    async with aopen("mode.txt", mode="r+", encoding="utf-8") as __mode:
         async for _mode in __mode:
             url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode[:-1]}?Authorization=" + _config["TOKEN"]
             _data = requests.get(url).json()
@@ -25,87 +73,28 @@ async def main():
             async with aopen(f"results\\{dt} {_mode[:-1]}__output_.json", mode = "wb") as __file:
                 await __file.write(dumps(_data, option=OPT_INDENT_2))
 
+@app.route("/", methods = ["GET", "POST"])
+def linebot():
+    signature = request.headers["X-Line-Signature"]
+    # signature = requests.get("http://127.0.0.1:5050").headers["X-Line-Signature"]
+    body = request.get_data(as_text = True)
+    handler.handle(body, signature)
+    _data = json.loads(body)
+    _token = _data['events'][0]['replyToken']    
+    _id = _data['events'][0]['source']['userId']
+    # print(f">>>\n{_data}\n>>>")
+
+    if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
+        if (kwds_check(_data['events'][0]['message']['text'])):
+            loop = new_event_loop()
+            loop.run_until_complete(main())
+            loop.close()
+            reply_msg(_data['events'][0]['message']['text'], _token, _config["BOT-TOKEN"])
+
+    return ">>>POST<<<"
+
 if __name__ == "__main__":
     if system() == "Windows":
         set_event_loop_policy(WindowsSelectorEventLoopPolicy())
-
-    loop = new_event_loop()
-    loop.run_until_complete(main())
-    loop.close()
-
-'''
-F-C0032-001
-F-D0047-001
-F-D0047-003
-F-D0047-005
-F-D0047-007
-F-D0047-009
-F-D0047-011
-F-D0047-013
-F-D0047-015
-F-D0047-017
-F-D0047-019
-F-D0047-021
-F-D0047-023
-F-D0047-025
-F-D0047-027
-F-D0047-029
-F-D0047-031
-F-D0047-033
-F-D0047-035
-F-D0047-037
-F-D0047-039
-F-D0047-041
-F-D0047-043
-F-D0047-045
-F-D0047-047
-F-D0047-049
-F-D0047-051
-F-D0047-053
-F-D0047-055
-F-D0047-057
-F-D0047-059
-F-D0047-061
-F-D0047-063
-F-D0047-065
-F-D0047-067
-F-D0047-069
-F-D0047-071
-F-D0047-073
-F-D0047-075
-F-D0047-077
-F-D0047-079
-F-D0047-081
-F-D0047-083
-F-D0047-085
-F-D0047-087
-F-D0047-089
-F-D0047-091
-F-D0047-093
-F-A0021-001
-F-A0085-002
-F-A0085-003
-O-A0001-001
-O-A0002-001
-O-A0003-001
-O-A0004-001
-O-A0005-001
-O-A0006-002
-O-B0075-001
-O-B0075-002
-E-A0014-001
-E-A0015-001
-E-A0015-002
-E-A0016-001
-E-A0016-002
-C-B0025-001
-C-B0027-001
-C-B0074-001
-C-B0074-002
-W-C0033-001
-W-C0033-002
-W-C0034-005
-M-A0085-001
-A-B0062-001
-A-B0063-001
-'''
+    run_with_ngrok(app)
+    app.run()
