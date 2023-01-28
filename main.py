@@ -12,19 +12,21 @@ from linebot.exceptions import InvalidSignatureError
 # from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage
 
 import json
+from orjson import dumps, OPT_INDENT_2
+
 with open('config.json', 'r+', encoding='utf-8') as _file:
     _config = json.load(_file)
 
+kwds_ = False
+
 async def kwds_check(msg):
     async with aopen("keywords.txt", mode="r+", encoding="utf-8") as __kwds:
-        for _kwds in __kwds:
+        async for _kwds in __kwds:
             if msg == _kwds[:-1]:
-                print(_kwds)
-                return True
-        else:
-            return False
-
-# url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode}?Authorization=" + _config["TOKEN"]
+                # print(_kwds)
+                global kwds_
+                kwds_ = True
+                return
 
 app = Flask(__name__, template_folder="templates")
 
@@ -62,7 +64,7 @@ def filter(msg):
 
 async def main():
 
-    from orjson import dumps, OPT_INDENT_2
+    
 
     dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
     async with aopen("mode.txt", mode="r+", encoding="utf-8") as __mode:
@@ -80,21 +82,29 @@ def linebot():
     body = request.get_data(as_text = True)
     handler.handle(body, signature)
     _data = json.loads(body)
+    # with open("_data.json", mode="wb") as __data:
+    #     __data.write(dumps(_data, option = OPT_INDENT_2))
     _token = _data['events'][0]['replyToken']    
     _id = _data['events'][0]['source']['userId']
     # print(f">>>\n{_data}\n>>>")
 
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
-        if (kwds_check(_data['events'][0]['message']['text'])):
+        task = new_event_loop()
+        task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
+        task.close()
+        global kwds_
+        if (kwds_):
             loop = new_event_loop()
             loop.run_until_complete(main())
             loop.close()
             reply_msg(_data['events'][0]['message']['text'], _token, _config["BOT-TOKEN"])
+        kwds_ = False
 
     return ">>>POST<<<"
 
 if __name__ == "__main__":
     if system() == "Windows":
         set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+    kwds_ = False
     run_with_ngrok(app)
     app.run()
