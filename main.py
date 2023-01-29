@@ -11,29 +11,37 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 # from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage
 
-import json
-from orjson import dumps, OPT_INDENT_2
+from modules import Json
 
-with open('config.json', 'r+', encoding='utf-8') as _file:
-    _config = json.load(_file)
+from orjson import loads, dumps, OPT_INDENT_2
 
-kwds_ = False
+_config = Json.load("config.json")
 
-async def kwds_check(msg):
-    async with aopen("keywords.txt", mode="r+", encoding="utf-8") as __kwds:
-        async for _kwds in __kwds:
-            if msg == _kwds[:-1]:
-                # print(_kwds)
-                global kwds_
-                kwds_ = True
-                return
+kwds_ = ""
 
 app = Flask(__name__, template_folder="templates")
 
 line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
 
+dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
+
+async def kwds_check(msg):
+
+    async with aopen("keywords.json", mode="r+", encoding="utf-8") as __kwds:
+
+        _kwds = loads(await __kwds.read())
+        # print(_kwds)
+        for idx in _kwds:
+
+            if _kwds[idx].find(msg) != -1:
+                global kwds_
+                kwds_ = idx
+                print(f">>>\n{kwds_}\n>>>")
+                return
+
 def reply_msg(msg, rk, TOKEN):
+    
     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
     BODY = {
     "replyToken" : rk,
@@ -42,10 +50,12 @@ def reply_msg(msg, rk, TOKEN):
             "text": msg
         }]
     }
-    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=json.dumps(BODY).encode("utf-8"))
+    
+    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
     print(response.text)
 
 def reply_img(img, rk, TOKEN):
+
     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
     BODY = {
         "replyToken" : rk,
@@ -55,56 +65,61 @@ def reply_img(img, rk, TOKEN):
             "previewImageUrl" : img
         }]
     }
-    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=json.dumps(BODY).encode("utf-8"))
+    
+    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY).encode("utf-8"))
     print(response.text)
-
-def filter(msg):
-    if "地震" in msg:
-        return 
 
 async def main():
 
-    
-
-    dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
     async with aopen("mode.txt", mode="r+", encoding="utf-8") as __mode:
+
         async for _mode in __mode:
+            
+            if not _mode.startswith("E"):
+                continue
+            
             url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode[:-1]}?Authorization=" + _config["TOKEN"]
             _data = requests.get(url).json()
-            print(f"Capture >>> {_mode[:-1]}")
+            print(f"Captured >>> {_mode[:-1]}")
+
             async with aopen(f"results\\{dt} {_mode[:-1]}__output_.json", mode = "wb") as __file:
+
                 await __file.write(dumps(_data, option=OPT_INDENT_2))
+
 
 @app.route("/", methods = ["GET", "POST"])
 def linebot():
     signature = request.headers["X-Line-Signature"]
-    # signature = requests.get("http://127.0.0.1:5050").headers["X-Line-Signature"]
     body = request.get_data(as_text = True)
     handler.handle(body, signature)
-    _data = json.loads(body)
+    _data = Json.loads(body)
+    
     # with open("_data.json", mode="wb") as __data:
     #     __data.write(dumps(_data, option = OPT_INDENT_2))
+
     _token = _data['events'][0]['replyToken']    
     _id = _data['events'][0]['source']['userId']
-    # print(f">>>\n{_data}\n>>>")
 
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
         task = new_event_loop()
         task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
         task.close()
         global kwds_
-        if (kwds_):
+        if (kwds_ != ""):
             loop = new_event_loop()
             loop.run_until_complete(main())
             loop.close()
-            reply_msg(_data['events'][0]['message']['text'], _token, _config["BOT-TOKEN"])
-        kwds_ = False
+            __response = Json.load(f"results\\{dt} {kwds_}__output_.json")
+            _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
+            msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
+            reply_msg(msg, _token, _config["BOT-TOKEN"])
+        kwds_ = -1
 
     return ">>>POST<<<"
 
 if __name__ == "__main__":
     if system() == "Windows":
         set_event_loop_policy(WindowsSelectorEventLoopPolicy())
-    kwds_ = False
+    kwds_ = ""
     run_with_ngrok(app)
     app.run()
