@@ -19,7 +19,7 @@ _config = Json.load("config.json")
 
 kwds_ = ""
 
-app = Flask(__name__, template_folder="templates")
+app = Flask(__name__)
 
 line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
