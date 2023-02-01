@@ -1,3 +1,4 @@
 {
-    "TOKEN" : ""
+    "BOT-TOKEN" : "",
+    "BOT-SECRET" : ""
 }
