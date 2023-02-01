@@ -40,7 +40,7 @@ async def kwds_check(msg):
                 print(f">>>\n{kwds_}\n>>>")
                 return
 
-def reply_msg(msg, rk, TOKEN):
+def reply(msg, img, rk, TOKEN):
     
     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
     BODY = {
@@ -48,26 +48,31 @@ def reply_msg(msg, rk, TOKEN):
     "messages" : [{
             "type": "text",
             "text": msg
-        }]
-    }
-    
-    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
-    print(response.text)
-
-def reply_img(img, rk, TOKEN):
-
-    HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
-    BODY = {
-        "replyToken" : rk,
-        "messages" : [{
+        },
+        {
             "type" : "image", 
             "originalContentUrl" : img,
             "previewImageUrl" : img
         }]
     }
     
-    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY).encode("utf-8"))
+    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
     print(response.text)
+
+# def reply_img(img, rk, TOKEN):
+
+#     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
+#     BODY = {
+#         "replyToken" : rk,
+#         "messages" : [{
+#             "type" : "image", 
+#             "originalContentUrl" : img,
+#             "previewImageUrl" : img
+#         }]
+#     }
+    
+#     response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
+#     print(response.text)
 
 async def main():
 
@@ -78,7 +83,7 @@ async def main():
             if not _mode.startswith("E"):
                 continue
             
-            url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode[:-1]}?Authorization=" + _config["TOKEN"]
+            url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode[:-1]}?Authorization=" + _config["CWB-TOKEN"]
             _data = requests.get(url).json()
             print(f"Captured >>> {_mode[:-1]}")
 
@@ -112,7 +117,9 @@ def linebot():
             __response = Json.load(f"results\\{dt} {kwds_}__output_.json")
             _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
             msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
-            reply_msg(msg, _token, _config["BOT-TOKEN"])
+            img = __response["records"]["Earthquake"][0]["ReportImageURI"]
+            reply(msg, img, _token, _config["BOT-TOKEN"])
+            # reply_img(img, _token, _config["BOT-TOKEN"])
         kwds_ = -1
 
     return ">>>POST<<<"
