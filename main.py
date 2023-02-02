@@ -1,24 +1,21 @@
 from datetime import datetime, timedelta
 import requests
 from bs4 import BeautifulSoup
-from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
+from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy
 from aiofiles import open as aopen
 from platform import system
 
 from flask_ngrok import run_with_ngrok
-from flask import Flask, request, abort, current_app
+from flask import Flask, request
 from linebot import LineBotApi, WebhookHandler
-from linebot.exceptions import InvalidSignatureError
-
-from modules import Json
 
 from orjson import loads, dumps, OPT_INDENT_2
 
-cwb_URL = "https://www.cwb.gov.tw"
+from modules import Json, generator
 
 _config = Json.load("config.json")
+cwb_URL = "https://www.cwb.gov.tw"
 
-# kwds_ = ""
 app = Flask(__name__)
 line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
@@ -40,6 +37,13 @@ async def kwds_check(msg):
 def reply(msg, img, rk, TOKEN):
     
     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
+    
+    # if recall official-site qrcode
+    if(img == "official"):
+        _img = generator(dt, "https://www.cwb.gov.tw", (255, 255, 255), (0, 0, 0), f"results\\")
+        _img.generate()
+        img = _img.upload()
+        
     BODY = {
     "replyToken" : rk,
     "messages" : [{
@@ -89,8 +93,10 @@ def linebot():
             msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
             img = __response["records"]["Earthquake"][0]["ReportImageURI"]
             reply(msg, img, _token, _config["BOT-TOKEN"])
-            # reply_img(img, _token, _config["BOT-TOKEN"])
+            # reply(msg, "qrcode", _token, _config["BOT-TOKEN"])
+        
         kwds_ = -1
+
     return ">>>POST<<<"
 
 if __name__ == "__main__":
