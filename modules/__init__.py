@@ -1,4 +1,4 @@
 from .json import *
 from .generator import *
-from .react import *
+from .bot import *
 from .crawler import *

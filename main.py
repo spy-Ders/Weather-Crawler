@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import requests
 from bs4 import BeautifulSoup
-from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy
+from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
 from aiofiles import open as aopen
 from platform import system
 
@@ -11,7 +11,7 @@ from linebot import LineBotApi, WebhookHandler
 
 from orjson import loads, dumps, OPT_INDENT_2
 
-from modules import Json, generator
+from modules import Json, crawler, bot
 
 _config = Json.load("config.json")
 cwb_URL = "https://www.cwb.gov.tw"
@@ -34,48 +34,41 @@ async def kwds_check(msg):
                 print(f">>>\n{kwds_}\n>>>")
                 return
 
-def reply(msg, img, rk, TOKEN):
+# def reply(msg, img, rk, TOKEN):
     
-    HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
+#     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
     
-    # if recall official-site qrcode
-    if(img == "official"):
-        _img = generator(dt, "https://www.cwb.gov.tw", (255, 255, 255), (0, 0, 0), f"results\\")
-        _img.generate()
-        img = _img.upload()
-    if img != None:    
-        BODY = {
-        "replyToken" : rk,
-        "messages" : [{
-                "type": "text",
-                "text": msg
-            },
-            {
-                "type" : "image", 
-                "originalContentUrl" : img,
-                "previewImageUrl" : img
-            }]
-        }
-    else:
-        BODY = {
-        "replyToken" : rk,
-        "messages" : [{
-                "type": "text",
-                "text": msg
-            }]
-        }
+#     # if recall official-site qrcode
+#     if(img == "official"):
+#         _img = generator(dt, "https://www.cwb.gov.tw", (255, 255, 255), (0, 0, 0), f"results\\")
+#         _img.generate()
+#         img = _img.upload()
 
-    response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
-    print(response.text)
+#     if img != None:    
+#         BODY = {
+#         "replyToken" : rk,
+#         "messages" : [{
+#                 "type": "text",
+#                 "text": msg
+#             },
+#             {
+#                 "type" : "image", 
+#                 "originalContentUrl" : img,
+#                 "previewImageUrl" : img
+#             }]
+#         }
+#     else:
+#         BODY = {
+#         "replyToken" : rk,
+#         "messages" : [{
+#                 "type": "text",
+#                 "text": msg
+#             }]
+#         }
 
-async def crawler(_mode):
-    
-    url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode}?Authorization=" + _config["CWB-TOKEN"]
-    _data = requests.get(url).json()
-    print(f"Captured >>> {_mode}")
-    async with aopen(f"results\\{dt} {_mode}__output_.json", mode = "wb") as __file:
+#     response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
+#     print(response.text)
 
-        await __file.write(dumps(_data, option=OPT_INDENT_2))
 
 @app.route("/", methods = ["GET", "POST"])
 def linebot():
@@ -85,23 +78,24 @@ def linebot():
     _data = Json.loads(body)
     _token = _data['events'][0]['replyToken']    
     _id = _data['events'][0]['source']['userId']
+
     # with open("_data.json", mode="wb") as __data:
     #     __data.write(dumps(_data, option = OPT_INDENT_2))
+    
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
         task = new_event_loop()
         task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
         task.close()
         global kwds_
         if (kwds_ != ""):
-            loop = new_event_loop()
-            loop.run_until_complete(crawler(kwds_))
-            loop.close()
+            _info = crawler(dt = dt, mode = kwds_)
+            run(_info.crawl())
             __response = Json.load(f"results\\{dt} {kwds_}__output_.json")
             _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
             msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
             img = __response["records"]["Earthquake"][0]["ReportImageURI"]
-            reply(msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
-            # reply(msg, "qrcode", _token, _config["BOT-TOKEN"])
+            client = bot(dt = dt, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
+            client.reply()
         
         kwds_ = -1
 
