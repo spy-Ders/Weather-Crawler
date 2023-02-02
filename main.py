@@ -35,9 +35,6 @@ def linebot():
     
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
         client = bot(dt = dt, kwd = _data['events'][0]['message']['text'],msg = None, img = None, rk = _token, TOKEN = _config["BOT-TOKEN"])
-        # task = new_event_loop()
-        # task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
-        # task.close()
         global kwds_
         kwds_ = run(client.kwds_check())
         if (kwds_ != ""):
@@ -49,9 +46,9 @@ def linebot():
             img = __response["records"]["Earthquake"][0]["ReportImageURI"]
             client = bot(dt = dt, kwd = None, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
             client.reply()
-        
-        kwds_ = -1
 
+        kwds_ = -1
+    
     return ">>>POST<<<"
 
 if __name__ == "__main__":
