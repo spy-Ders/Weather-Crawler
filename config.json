@@ -1,5 +1,6 @@
 {
     "BOT-TOKEN" : "",
     "BOT-SECRET" : "",
-    "CWB-TOKEN" : ""
+    "CWB-TOKEN" : "",
+    "IMGUR-TOKEN" : ""
 }
