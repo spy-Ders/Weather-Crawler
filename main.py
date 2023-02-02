@@ -43,20 +43,28 @@ def reply(msg, img, rk, TOKEN):
         _img = generator(dt, "https://www.cwb.gov.tw", (255, 255, 255), (0, 0, 0), f"results\\")
         _img.generate()
         img = _img.upload()
-        
-    BODY = {
-    "replyToken" : rk,
-    "messages" : [{
-            "type": "text",
-            "text": msg
-        },
-        {
-            "type" : "image", 
-            "originalContentUrl" : img,
-            "previewImageUrl" : img
-        }]
-    }
-    
+    if img != None:    
+        BODY = {
+        "replyToken" : rk,
+        "messages" : [{
+                "type": "text",
+                "text": msg
+            },
+            {
+                "type" : "image", 
+                "originalContentUrl" : img,
+                "previewImageUrl" : img
+            }]
+        }
+    else:
+        BODY = {
+        "replyToken" : rk,
+        "messages" : [{
+                "type": "text",
+                "text": msg
+            }]
+        }
+
     response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
     print(response.text)
 
@@ -92,7 +100,7 @@ def linebot():
             _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
             msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
             img = __response["records"]["Earthquake"][0]["ReportImageURI"]
-            reply(msg, img, _token, _config["BOT-TOKEN"])
+            reply(msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
             # reply(msg, "qrcode", _token, _config["BOT-TOKEN"])
         
         kwds_ = -1
