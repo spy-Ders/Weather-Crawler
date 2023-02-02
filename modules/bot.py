@@ -1,9 +1,11 @@
 from modules import generator, Json
 import requests
-from orjson import dumps, OPT_INDENT_2
+from orjson import loads, dumps, OPT_INDENT_2
+from aiofiles import open as aopen
 
 class bot:
-    def __init__(self, dt, msg, img, rk, TOKEN):
+    def __init__(self, kwd, dt, msg, img, rk, TOKEN):
+        self.kwd = kwd
         self.dt = dt
         self.msg = msg
         self.img = img
@@ -44,3 +46,16 @@ class bot:
 
         response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
         print(response.text)
+
+    async def kwds_check(self):
+
+        async with aopen("keywords.json", mode="r+", encoding="utf-8") as __kwds:
+
+            _kwds = loads(await __kwds.read())
+            for idx in _kwds:
+
+                if _kwds[idx].find(self.kwd) != -1:
+                    # global kwds_
+                    kwds_ = idx
+                    print(f">>>\n{kwds_}\n>>>")
+                    return kwds_

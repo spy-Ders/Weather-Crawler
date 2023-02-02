@@ -21,53 +21,18 @@ line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
 dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
 
-async def kwds_check(msg):
+# async def kwds_check(msg):
 
-    async with aopen("keywords.json", mode="r+", encoding="utf-8") as __kwds:
+#     async with aopen("keywords.json", mode="r+", encoding="utf-8") as __kwds:
 
-        _kwds = loads(await __kwds.read())
-        for idx in _kwds:
+#         _kwds = loads(await __kwds.read())
+#         for idx in _kwds:
 
-            if _kwds[idx].find(msg) != -1:
-                global kwds_
-                kwds_ = idx
-                print(f">>>\n{kwds_}\n>>>")
-                return
-
-# def reply(msg, img, rk, TOKEN):
-    
-#     HEADERS = {'Authorization':f'Bearer {TOKEN}','Content-Type':'application/json'}
-    
-#     # if recall official-site qrcode
-#     if(img == "official"):
-#         _img = generator(dt, "https://www.cwb.gov.tw", (255, 255, 255), (0, 0, 0), f"results\\")
-#         _img.generate()
-#         img = _img.upload()
-
-#     if img != None:    
-#         BODY = {
-#         "replyToken" : rk,
-#         "messages" : [{
-#                 "type": "text",
-#                 "text": msg
-#             },
-#             {
-#                 "type" : "image", 
-#                 "originalContentUrl" : img,
-#                 "previewImageUrl" : img
-#             }]
-#         }
-#     else:
-#         BODY = {
-#         "replyToken" : rk,
-#         "messages" : [{
-#                 "type": "text",
-#                 "text": msg
-#             }]
-#         }
-
-#     response = requests.post(url = "https://api.line.me/v2/bot/message/reply", headers=HEADERS,data=dumps(BODY, option=OPT_INDENT_2))
-#     print(response.text)
+#             if _kwds[idx].find(msg) != -1:
+#                 global kwds_
+#                 kwds_ = idx
+#                 print(f">>>\n{kwds_}\n>>>")
+#                 return
 
 
 @app.route("/", methods = ["GET", "POST"])
@@ -83,10 +48,12 @@ def linebot():
     #     __data.write(dumps(_data, option = OPT_INDENT_2))
     
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
-        task = new_event_loop()
-        task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
-        task.close()
+        client = bot(dt = dt, kwd = _data['events'][0]['message']['text'],msg = None, img = None, rk = _token, TOKEN = _config["BOT-TOKEN"])
+        # task = new_event_loop()
+        # task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
+        # task.close()
         global kwds_
+        kwds_ = run(client.kwds_check())
         if (kwds_ != ""):
             _info = crawler(dt = dt, mode = kwds_)
             run(_info.crawl())
@@ -94,7 +61,7 @@ def linebot():
             _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
             msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
             img = __response["records"]["Earthquake"][0]["ReportImageURI"]
-            client = bot(dt = dt, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
+            client = bot(dt = dt, kwd = None, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
             client.reply()
         
         kwds_ = -1
