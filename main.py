@@ -14,15 +14,14 @@ from modules import Json
 
 from orjson import loads, dumps, OPT_INDENT_2
 
+cwb_URL = "https://www.cwb.gov.tw"
+
 _config = Json.load("config.json")
 
-kwds_ = ""
-
+# kwds_ = ""
 app = Flask(__name__)
-
 line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
-
 dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
 
 async def kwds_check(msg):
@@ -62,12 +61,9 @@ async def crawler(_mode):
     url = f"https://opendata.cwb.gov.tw/api/v1/rest/datastore/{_mode}?Authorization=" + _config["CWB-TOKEN"]
     _data = requests.get(url).json()
     print(f"Captured >>> {_mode}")
-
     async with aopen(f"results\\{dt} {_mode}__output_.json", mode = "wb") as __file:
 
         await __file.write(dumps(_data, option=OPT_INDENT_2))
-
-
 
 @app.route("/", methods = ["GET", "POST"])
 def linebot():
@@ -75,13 +71,10 @@ def linebot():
     body = request.get_data(as_text = True)
     handler.handle(body, signature)
     _data = Json.loads(body)
-    
-    # with open("_data.json", mode="wb") as __data:
-    #     __data.write(dumps(_data, option = OPT_INDENT_2))
-
     _token = _data['events'][0]['replyToken']    
     _id = _data['events'][0]['source']['userId']
-
+    # with open("_data.json", mode="wb") as __data:
+    #     __data.write(dumps(_data, option = OPT_INDENT_2))
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
         task = new_event_loop()
         task.run_until_complete(kwds_check(_data['events'][0]['message']['text']))
@@ -98,12 +91,12 @@ def linebot():
             reply(msg, img, _token, _config["BOT-TOKEN"])
             # reply_img(img, _token, _config["BOT-TOKEN"])
         kwds_ = -1
-
     return ">>>POST<<<"
 
 if __name__ == "__main__":
     if system() == "Windows":
         set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+    global kwds_
     kwds_ = ""
     run_with_ngrok(app)
     app.run()
