@@ -21,20 +21,6 @@ line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
 dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
 
-# async def kwds_check(msg):
-
-#     async with aopen("keywords.json", mode="r+", encoding="utf-8") as __kwds:
-
-#         _kwds = loads(await __kwds.read())
-#         for idx in _kwds:
-
-#             if _kwds[idx].find(msg) != -1:
-#                 global kwds_
-#                 kwds_ = idx
-#                 print(f">>>\n{kwds_}\n>>>")
-#                 return
-
-
 @app.route("/", methods = ["GET", "POST"])
 def linebot():
     signature = request.headers["X-Line-Signature"]
