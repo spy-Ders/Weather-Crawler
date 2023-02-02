@@ -9,7 +9,6 @@ from flask_ngrok import run_with_ngrok
 from flask import Flask, request, abort, current_app
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-# from linebot.models import MessageEvent, TextMessage, TextSendMessage, ImageMessage, ImageSendMessage
 
 from modules import Json
 
