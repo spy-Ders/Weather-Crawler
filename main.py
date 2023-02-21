@@ -13,9 +13,10 @@ from orjson import loads, dumps, OPT_INDENT_2
 
 from modules import Json, crawler, bot
 
+# config檔案讀取
 _config = Json.load("config.json")
-cwb_URL = "https://www.cwb.gov.tw"
 
+cwb_URL = "https://www.cwb.gov.tw"
 app = Flask(__name__)
 line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
