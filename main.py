@@ -2,7 +2,8 @@ from datetime import datetime
 from asyncio import set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
 from aiofiles import open as aopen
 from platform import system
-from orjson import dumps, OPT_INDENT_2
+from os.path import isdir
+from os import makedirs
 
 from flask_ngrok import run_with_ngrok
 from flask import Flask, request
@@ -54,9 +55,18 @@ def linebot():
     return ">>>POST<<<"
 
 if __name__ == "__main__":
+    
     if system() == "Windows":
         set_event_loop_policy(WindowsSelectorEventLoopPolicy())
+    
+    # kwds_ init
     global kwds_
     kwds_ = ""
+    
+    # 爬蟲結果資料夾存在 ? continue : 建立
+    if not isdir("results"):
+        makedirs("results")
+    
+    # 以ngrok執行
     run_with_ngrok(app)
     app.run()
