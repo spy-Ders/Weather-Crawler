@@ -1,15 +1,12 @@
-from datetime import datetime, timedelta
-import requests
-from bs4 import BeautifulSoup
-from asyncio import new_event_loop, set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
+from datetime import datetime
+from asyncio import set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
 from aiofiles import open as aopen
 from platform import system
+from orjson import dumps, OPT_INDENT_2
 
 from flask_ngrok import run_with_ngrok
 from flask import Flask, request
 from linebot import LineBotApi, WebhookHandler
-
-from orjson import loads, dumps, OPT_INDENT_2
 
 from modules import Json, crawler, bot
 
@@ -41,11 +38,15 @@ def linebot():
             _info = crawler(dt = dt, mode = kwds_)
             run(_info.crawl())
             __response = Json.load(f"results\\{dt} {kwds_}__output_.json")
-            _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
-            msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
-            img = __response["records"]["Earthquake"][0]["ReportImageURI"]
-            client = bot(dt = dt, kwd = None, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
-            client.reply()
+            if kwds_ == "E-A0016-001":
+                _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
+                msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"
+                img = __response["records"]["Earthquake"][0]["ReportImageURI"]
+                client = bot(dt = dt, kwd = None, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
+                client.reply()
+
+            elif kwds_ == "E-A0014-001":
+                _response = ""
 
         kwds_ = -1
     

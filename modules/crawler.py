@@ -2,8 +2,6 @@ import requests
 from aiofiles import open as aopen
 from orjson import dumps, OPT_INDENT_2
 from modules import Json
-from asyncio import sleep as asleep
-# from async_class import AsyncClass
 
 _config = Json.load("config.json")
 

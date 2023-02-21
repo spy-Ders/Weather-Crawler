@@ -1,0 +1,24 @@
+{
+  "destination": "U2fa69b8027003184c071a382b838fcf1",
+  "events": [
+    {
+      "type": "message",
+      "message": {
+        "type": "text",
+        "id": "17548851483036",
+        "text": "haha"
+      },
+      "webhookEventId": "01GQWP2185DEHQ712M18ZB9961",
+      "deliveryContext": {
+        "isRedelivery": false
+      },
+      "timestamp": 1674926163159,
+      "source": {
+        "type": "user",
+        "userId": "U1b5fb88253375bbb301e17396ac2ad72"
+      },
+      "replyToken": "ee3e1e31d1d64aea82a5cdf182b7a56a",
+      "mode": "active"
+    }
+  ]
+}
