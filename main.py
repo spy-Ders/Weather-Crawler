@@ -27,7 +27,7 @@ def linebot():
     handler.handle(body, signature)
     _data = Json.loads(body)
     _token = _data['events'][0]['replyToken']    
-    _id = _data['events'][0]['source']['userId']
+    # _id = _data['events'][0]['source']['userId']
 
     # with open("_data.json", mode="wb") as __data:
     #     __data.write(dumps(_data, option = OPT_INDENT_2))
