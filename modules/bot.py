@@ -17,8 +17,13 @@ class bot:
         HEADERS = {'Authorization':f'Bearer {self.TOKEN}','Content-Type':'application/json'}
         
         # if recall official-site qrcode
-        if(self.img == "official"):
+        if self.img == "official":
             _img = generator(self.dt, "https://www.cwb.gov.tw", (255, 255, 255), (0, 0, 0), f"results\\")
+            _img.generate()
+            self.img = _img.upload()
+        
+        elif self.img.startswith("https") or self.img.startswith("www"):
+            _img = generator(self.dt, self.img, (255, 255, 255), (0, 0, 0), f"results\\")
             _img.generate()
             self.img = _img.upload()
 

@@ -36,7 +36,7 @@ def linebot():
         client = bot(dt = dt, kwd = _data['events'][0]['message']['text'],msg = None, img = None, rk = _token, TOKEN = _config["BOT-TOKEN"])
         global kwds_
         kwds_ = run(client.kwds_check())
-        if kwds_ != "" or kwds_ != None:
+        if kwds_ != "" or kwds_ != None:    
             _info = crawler(dt = dt, mode = kwds_)
             run(_info.crawl())
             __response = Json.load(f"results\\{dt} {kwds_}__output_.json")
@@ -48,9 +48,11 @@ def linebot():
                 client.reply()
 
             elif kwds_ == "E-A0014-001":
-                _response = ""
+                client = bot(dt = dt, kwd = None, msg = f"找不到相關資訊喔 >\\\\\\< \n疑難排解:\n1.目前未提供該服務\n2.請參考中央氣象局官方網站獲取更多資訊\n{cwb_URL}", img = "https://hackmd.io", rk = _token, TOKEN = _config["BOT-TOKEN"])
+                client.reply()
 
             else:
+
                 client = bot(dt = dt, kwd = None, msg = f"找不到相關資訊喔 >\\\\\\< \n疑難排解:\n1.目前未提供該服務\n2.請參考中央氣象局官方網站獲取更多資訊\n{cwb_URL}", img = "official", rk = _token, TOKEN = _config["BOT-TOKEN"])
                 client.reply()
 
