@@ -26,7 +26,8 @@ def linebot():
     body = request.get_data(as_text = True)
     handler.handle(body, signature)
     _data = Json.loads(body)
-    _token = _data['events'][0]['replyToken']    
+    _token = _data['events'][0]['replyToken']
+    
     # _id = _data['events'][0]['source']['userId']
 
     # with open("_data.json", mode="wb") as __data:
@@ -47,10 +48,10 @@ def linebot():
                 client = bot(dt = dt, kwd = None, msg = msg, img = img, rk = _token, TOKEN = _config["BOT-TOKEN"])
                 client.reply()
 
-            elif kwds_ == "E-A0014-001":
-                client = bot(dt = dt, kwd = None, msg = f"找不到相關資訊喔 >\\\\\\< \n疑難排解:\n1.目前未提供該服務\n2.請參考中央氣象局官方網站獲取更多資訊\n{cwb_URL}", img = "https://hackmd.io", rk = _token, TOKEN = _config["BOT-TOKEN"])
-                client.reply()
-
+            # elif kwds_ == "E-A0014-001":
+            #     client = bot(dt = dt, kwd = None, msg = f"找不到相關資訊喔 >\\\\\\< \n疑難排解:\n1.目前未提供該服務\n2.請參考中央氣象局官方網站獲取更多資訊\n{cwb_URL}", img = "https://hackmd.io", rk = _token, TOKEN = _config["BOT-TOKEN"])
+            #     client.reply()
+            
             else:
 
                 client = bot(dt = dt, kwd = None, msg = f"找不到相關資訊喔 >\\\\\\< \n疑難排解:\n1.目前未提供該服務\n2.請參考中央氣象局官方網站獲取更多資訊\n{cwb_URL}", img = "official", rk = _token, TOKEN = _config["BOT-TOKEN"])
