@@ -13,7 +13,7 @@ from linebot import LineBotApi, WebhookHandler
 from modules import Json, crawler, bot
 import gen_config
 
-if not isfile("_config.json"):
+if not isfile("config.json"):
     run(gen_config.gen_CONFIG())
 
 # config檔案讀取
