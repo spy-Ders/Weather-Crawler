@@ -2,8 +2,9 @@ from datetime import datetime
 from asyncio import set_event_loop_policy, WindowsSelectorEventLoopPolicy, run
 from aiofiles import open as aopen
 from platform import system
-from os.path import isdir
+from os.path import isdir, isfile
 from os import makedirs
+import os
 
 from flask_ngrok import run_with_ngrok
 from flask import Flask, request
@@ -78,6 +79,9 @@ if __name__ == "__main__":
     # 爬蟲結果資料夾存在 ? continue : 建立
     if not isdir("results"):
         makedirs("results")
+
+    if not isfile("config.json"):
+        os.system("python gen_config.json")
     
     # 以ngrok執行
     run_with_ngrok(app)
