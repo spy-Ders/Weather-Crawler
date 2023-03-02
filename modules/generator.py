@@ -5,7 +5,7 @@ from qrcode.image.styles.moduledrawers import RoundedModuleDrawer
 from qrcode.image.styles.colormasks import SolidFillColorMask
 from datetime import datetime
 from pyimgur import Imgur
-from modules import Json
+from .json import Json
 
 _config = Json.load("config.json")
 

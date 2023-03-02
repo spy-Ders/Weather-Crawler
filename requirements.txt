@@ -3,3 +3,4 @@ flask-ngrok == 0.0.25
 orjson == 3.6.7
 aiofiles == 22.1.0
 line-bot-sdk == 2.4.1
+qrcode == 7.4.2

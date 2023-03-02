@@ -11,6 +11,10 @@ from flask import Flask, request
 from linebot import LineBotApi, WebhookHandler
 
 from modules import Json, crawler, bot
+import gen_config
+
+if not isfile("_config.json"):
+    run(gen_config.gen_CONFIG())
 
 # config檔案讀取
 _config = Json.load("config.json")
@@ -79,9 +83,6 @@ if __name__ == "__main__":
     # 爬蟲結果資料夾存在 ? continue : 建立
     if not isdir("results"):
         makedirs("results")
-
-    if not isfile("config.json"):
-        os.system("python gen_config.json")
     
     # 以ngrok執行
     run_with_ngrok(app)
