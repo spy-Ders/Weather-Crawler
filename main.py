@@ -17,7 +17,7 @@ if not isfile("config.json"):
     run(gen_config.gen_CONFIG())
 
 # config檔案讀取
-_config = Json.load("config.json")
+_config = Json.load_nowait("config.json")
 
 cwb_URL = "https://www.cwb.gov.tw"
 app = Flask(__name__)
@@ -45,7 +45,7 @@ def linebot():
         if kwds_ != "" or kwds_ != None:    
             _info = crawler(dt = dt, mode = kwds_)
             run(_info.crawl())
-            __response = Json.load(f"results\\{dt} {kwds_}__output_.json")
+            __response = Json.load_nowait(f"results\\{dt} {kwds_}__output_.json")
             if kwds_ == "E-A0016-001":
                 _response = __response["records"]["Earthquake"][0]["EarthquakeInfo"]
                 msg = f"{_response['OriginTime'].replace(':', '-')}發生芮氏規模 {_response['EarthquakeMagnitude']['MagnitudeValue']} 的地震!\n>>>\n地點: {_response['Epicenter']['Location']}\n震源深度: {_response['FocalDepth']}\n>>>"

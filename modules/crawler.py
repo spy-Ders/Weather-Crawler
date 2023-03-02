@@ -3,7 +3,7 @@ from aiofiles import open as aopen
 from orjson import dumps, OPT_INDENT_2
 from modules import Json
 
-_config = Json.load("config.json")
+_config = Json.load_nowait("config.json")
 
 class crawler():
     def __init__(self, dt, mode):

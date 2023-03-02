@@ -7,7 +7,7 @@ from datetime import datetime
 from pyimgur import Imgur
 from .json import Json
 
-_config = Json.load("config.json")
+_config = Json.load_nowait("config.json")
 
 class generator:
     def __init__(self, dt, URL, bg = (255, 255, 255), code = (0, 0, 0), path = "") -> None:
