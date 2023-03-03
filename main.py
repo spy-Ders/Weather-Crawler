@@ -13,30 +13,29 @@ from linebot import LineBotApi, WebhookHandler
 from modules import Json, crawler, bot
 import gen_config
 
+# config檔製作
 if not isfile("config.json"):
     run(gen_config.gen_CONFIG())
 
 # config檔案讀取
 _config = Json.load_nowait("config.json")
 
+# init
 cwb_URL = "https://www.cwb.gov.tw"
 app = Flask(__name__)
 line_bot_api = LineBotApi(_config["BOT-TOKEN"])
 handler = WebhookHandler(_config["BOT-SECRET"])
-dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
 
+# line-bot site
 @app.route("/", methods = ["GET", "POST"])
 def linebot():
+
+    dt = datetime.now().strftime("%Y%m%d %H-%M-%S")
     signature = request.headers["X-Line-Signature"]
     body = request.get_data(as_text = True)
     handler.handle(body, signature)
     _data = Json.loads(body)
     _token = _data['events'][0]['replyToken']
-    
-    # _id = _data['events'][0]['source']['userId']
-
-    # with open("_data.json", mode="wb") as __data:
-    #     __data.write(dumps(_data, option = OPT_INDENT_2))
     
     if "message" in _data["events"][0] and _data["events"][0]["message"]["type"] == "text":
         client = bot(dt = dt, kwd = _data['events'][0]['message']['text'],msg = None, img = None, rk = _token, TOKEN = _config["BOT-TOKEN"])
@@ -71,6 +70,8 @@ def linebot():
     
     return ">>>POST<<<"
 
+
+# startup
 if __name__ == "__main__":
     
     if system() == "Windows":
