@@ -63,7 +63,7 @@ def linebot():
 
         else:
             
-            client = bot(dt = dt, kwd = None, msg = f"找不到相關資訊喔 >\\\\\\< \n疑難排解:\n1.目前未提供該服務\n2.請參考中央氣象局官方網站獲取更多資訊\n{cwb_URL}", img = "official", rk = _token, TOKEN = _config["BOT-TOKEN"])
+            client = bot(dt = dt, kwd = None, msg = f"看來你不會使用這項你不會使用這項服務喔 :(", img = None, rk = _token, TOKEN = _config["BOT-TOKEN"])
             client.reply()
 
         kwds_ = -1
